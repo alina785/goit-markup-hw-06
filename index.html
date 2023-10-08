@@ -21,6 +21,7 @@
     />
     <!-- Підключення стилів -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -31,11 +32,15 @@
             >Web<span class="header-logo-accent">Studio</span></a
           >
           <ul class="header-list">
-            <li>
-              <a class="header-link current" href="./index.html">Studio</a>
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Studio</a>
             </li>
-            <li><a class="header-link" href="">Portfolio</a></li>
-            <li><a class="header-link" href="">Contacts</a></li>
+            <li class="header-item">
+              <a class="header-link" href="">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="header-address">
@@ -52,6 +57,11 @@
             </li>
           </ul>
         </address>
+        <button class="button-mobile-menu" type="button">
+          <svg class="button-menu" width="24" height="24">
+            <use href="./images/menu-icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- END HEADER SECTION -->
@@ -130,6 +140,7 @@
           <ul class="team-list">
             <li class="product-designer">
               <img
+                srcset="./images/markimg.jpg 1x, ./images/markimg@2x.jpg 2x"
                 src="./images/img-16.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -172,6 +183,7 @@
             </li>
             <li class="product-designer">
               <img
+                srcset="./images/tom-img.jpg 1x, ./images/tom-img@2x.jpg 2x"
                 src="./images/img-17-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -214,6 +226,7 @@
             </li>
             <li class="product-designer">
               <img
+                srcset="./images/camila-img.jpg 1x ./images/camila-img@2x.jpg 2x"
                 src="./images/img-18-2.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -256,6 +269,7 @@
             </li>
             <li class="product-designer">
               <img
+                srcset="./images/daniel-img.jpg 1x ./images/daniel-img@2x.jpg 2x"
                 src="./images/img-19-2.jpg"
                 alt="Daniel Wilson"
                 width="264"
